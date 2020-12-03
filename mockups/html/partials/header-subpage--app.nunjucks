@@ -26,8 +26,8 @@
                 <li>3 Kinder</li>
             </ul>
             <p>Lorem consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsuerat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsuctus est Lorem ipsum dolor sit amet. Lorem ipsum.</p>
-            <button class="btn btn--primary mt-5" name="inqiry_button" formaction="/unverbindliche-anfrage">Anfragen</button>
-            <button class="btn btn--secondary mt-5" name="book_button">Buchen</button>
+            <button class="btn btn--primary mt-3" name="inqiry_button" formaction="/unverbindliche-anfrage">Anfragen</button>
+            <button class="btn btn--secondary mt-3" name="book_button">Buchen</button>
         </div>
     </div>
 </div>
