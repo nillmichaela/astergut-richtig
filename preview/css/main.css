@@ -8195,11 +8195,14 @@ footer {
       padding-left: 75px;
       margin-top: 50px; }
   .media-text--async__badge {
+    transition: all .5s ease;
     width: 250px;
     position: absolute;
     bottom: -125px;
     right: 20px;
     z-index: 1; }
+    .media-text--async__badge:hover {
+      transform: rotate(20deg); }
 
 .has-description {
   margin-bottom: 250px; }
@@ -8293,7 +8296,10 @@ footer {
 .text--badge, .text--badge--left {
   position: absolute;
   right: 25px;
+  transition: all .5s ease;
   bottom: -85px; }
+  .text--badge:hover, .text--badge--left:hover {
+    transform: rotate(20deg); }
   .text--badge img, .text--badge--left img {
     width: 100px; }
 
@@ -8302,10 +8308,13 @@ footer {
   bottom: -85px; }
 
 .two-media-text--async--badge {
+  transition: all .5s ease;
   position: absolute;
   z-index: 1;
   right: 20px;
   bottom: -160px; }
+  .two-media-text--async--badge:hover {
+    transform: rotate(20deg); }
 
 .two-media-text--async .flex-row-reverse .two-media-text__text--nobg {
   padding-left: 100px; }
@@ -9642,7 +9651,7 @@ footer {
     .has-description {
       margin-bottom: 350px; }
     .media-text__text--nobg {
-      padding-left: 100px;
+      padding-left: 150px;
       padding-right: 100px; }
     .media-text__text--bg {
       padding-right: 100px;

@@ -52,7 +52,7 @@
         </div>
         <div class="element media-text">
             <div class="row">
-                <div class="media-text__text media-text__text--nobg col-xl-4">
+                <div class="media-text__text media-text__text--nobg col-xl-5">
                     <h2>Private Spa</h2>
                     <h3>ENTSPANNEN IN RUHIGER ATMOSPHÄRE </h3>
                     <p>
@@ -64,7 +64,7 @@
                     </p>
                     <a class="btn btn--link">MEHR INFOS</a>
                 </div>
-                <div class="media-text__image col-xl-8 d-flex align-items-end">
+                <div class="media-text__image col-xl-7 d-flex align-items-end">
                     <img class="img-fluid" src="img/startseite/sauna.jpg" alt="Zimmer">
                 </div>
             </div>

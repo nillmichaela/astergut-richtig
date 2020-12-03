@@ -59,6 +59,10 @@
     }
   }
   &__badge {
+    transition: all .5s ease;
+    &:hover {
+      transform: rotate(20deg);
+    }
     width: 250px;
     position: absolute;
     bottom: -125px;
