@@ -36,13 +36,13 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @include fontStack('Proxima Nova', 600, 18, 23, 200);
+  @include fontStack('proxima-nova, sans-serif', 600, 18, 23, 200);
   color: $color--bermuda-gray;
   text-transform: uppercase;
   text-shadow: none;
   .soft {
     width: 90px;
-    @include fontStack('Proxima Nova', 400, 18, 23, 200);
+    @include fontStack('proxima-nova, sans-serif', 400, 18, 23, 200);
     text-transform: none;
     display: inline-block;
   }
@@ -59,7 +59,7 @@ h3, .h3 {
   }
 }
 ul li {
-  @include fontStack('Proxima Nova', 500, 18, 23, 200);
+  @include fontStack('proxima-nova, sans-serif', 500, 18, 23, 200);
   color: $color--bermuda-gray;
   text-transform: uppercase;
   list-style-image: url(../img/icons/check.svg);
@@ -95,7 +95,7 @@ ul li {
 }
 
 .btn, .btn {
-  @include fontStack('Proxima Nova', 600, 18, 35, 200);
+  @include fontStack('proxima-nova, sans-serif', 600, 18, 35, 200);
   color: $color--white;
   text-transform: uppercase;
   padding: 0 10px;
@@ -113,7 +113,7 @@ ul li {
 }
 
 .btn.btn--link {
-  @include fontStack('Proxima Nova', 400, 18, 23, 200);
+  @include fontStack('proxima-nova, sans-serif', 400, 18, 23, 200);
   color: $color--bermuda-gray;
   text-transform: uppercase;
   padding: 0;
@@ -128,9 +128,9 @@ ul li {
 }
 
 .description {
-  @include fontStack('Proxima Nova', 500, 16, 23, 200);
+  @include fontStack('proxima-nova, sans-serif', 500, 16, 23, 200);
   @include media-breakpoint-up(md){
-    @include fontStack('Proxima Nova', 500, 22, 23, 200);
+    @include fontStack('proxima-nova, sans-serif', 500, 22, 23, 200);
   }
   color: $color--white;
   text-transform: uppercase;
@@ -150,7 +150,7 @@ ul li {
 
 footer {
   strong {
-    @include fontStack('Proxima Nova', 400, 18, 23, 200);
+    @include fontStack('proxima-nova, sans-serif', 400, 18, 23, 200);
     color: $color--white;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -179,7 +179,7 @@ footer, footer p, footer a {
 
 .main-nav {
   a {
-    @include fontStack('Proxima Nova', 400, 18, 23, 200);
+    @include fontStack('proxima-nova, sans-serif', 400, 18, 23, 200);
     color: $color--white;
     text-transform: uppercase;
   }
@@ -193,7 +193,7 @@ footer, footer p, footer a {
 }
 
 .caption {
-  @include fontStack('Proxima Nova', 400, 18, 23, 200);
+  @include fontStack('proxima-nova, sans-serif', 400, 18, 23, 200);
   color: $color--abbey;
   text-transform: uppercase;
   background: rgba(255, 255, 255, 0.56);
