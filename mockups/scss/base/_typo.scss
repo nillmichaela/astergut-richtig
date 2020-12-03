@@ -3,9 +3,9 @@
 @import "../../../node_modules/bootstrap/scss/mixins";
 
 body, p, a {
-  @include fontStack('myriad-pro-semiextended', 400, 16, 28, 0);
+  @include fontStack('myriad-pro, sans-serif', 300, 16, 28, 0);
   @include media-breakpoint-up(md){
-    @include fontStack('myriad-pro-semiextended', 400, 20, 28, 0);
+    @include fontStack('myriad-pro, sans-serif', 300, 20, 28, 0);
   }
   color: $color--salt-box;
 }
@@ -22,14 +22,21 @@ h1, .h1 {
 h2, .h2 {
   @include fontStack('Playfair Display', 400, 35, normal, 120);
   @include media-breakpoint-up(md){
-    @include fontStack('Playfair Display', 400, 60, normal, 120);
+    @include fontStack('Playfair Display', 400, 54, normal, 120);
   }
   color: $color--mine-shaft;
   text-shadow: none;
+  &.soft {
+    @include media-breakpoint-up(md){
+      @include fontStack('Playfair Display', 400, 50, normal, 120);
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+  }
 }
 
 h3, .h3 {
-  @include fontStack('Proxima Nova', 700, 18, 23, 200);
+  @include fontStack('Proxima Nova', 600, 18, 23, 200);
   color: $color--bermuda-gray;
   text-transform: uppercase;
   text-shadow: none;
@@ -39,15 +46,25 @@ h3, .h3 {
     text-transform: none;
     display: inline-block;
   }
+  @include media-breakpoint-up(lg) {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
 }
 
+.description-image {
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+}
 ul li {
-  @include fontStack('Proxima Nova', 700, 18, 23, 200);
+  @include fontStack('Proxima Nova', 500, 18, 23, 200);
   color: $color--bermuda-gray;
   text-transform: uppercase;
   list-style-image: url(../img/icons/check.svg);
   padding-left: 25px;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .special-list {
@@ -105,12 +122,15 @@ ul li {
     color: $color--mine-shaft;
     text-decoration: underline;
   }
+  @include media-breakpoint-up(xl) {
+    margin-top: 45px;
+  }
 }
 
 .description {
-  @include fontStack('Proxima Nova', 700, 16, 23, 200);
+  @include fontStack('Proxima Nova', 500, 16, 23, 200);
   @include media-breakpoint-up(md){
-    @include fontStack('Proxima Nova', 700, 22, 23, 200);
+    @include fontStack('Proxima Nova', 500, 22, 23, 200);
   }
   color: $color--white;
   text-transform: uppercase;
@@ -130,7 +150,7 @@ ul li {
 
 footer {
   strong {
-    @include fontStack('Proxima Nova', 600, 18, 23, 200);
+    @include fontStack('Proxima Nova', 400, 18, 23, 200);
     color: $color--white;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -151,7 +171,7 @@ footer {
 }
 
 footer, footer p, footer a {
-  @include fontStack('myriad-pro-semiextended', 400, 20, 23, 75);
+  @include fontStack('myriad-pro, sans-serif', 300, 20, 23, 75);
   color: $color--white;
   margin-bottom: 0;
   text-transform: none;
@@ -183,7 +203,7 @@ footer, footer p, footer a {
   right: 50px;
   display: none;
   @include media-breakpoint-up(md) {
-    display: block;
+    //display: block;
   }
 }
 
@@ -218,4 +238,13 @@ footer, footer p, footer a {
     left: auto;
     right: -250px;
   }
+}
+
+.main-nav .is-active {
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.padding-list {
+  padding-right: 120px;
 }

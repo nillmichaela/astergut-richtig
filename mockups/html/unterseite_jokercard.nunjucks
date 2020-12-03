@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="element container-inner">
-            <h2>Leistungen</h2>
+            <h2 class="soft">Leistungen</h2>
             <ul class="row">
                 <li class="col-xl-4 col-lg-6">Talschlsszug</li>
                 <li class="col-xl-4 col-lg-6">Talschlsszug</li>
@@ -40,7 +40,7 @@
                 <li class="col-xl-4 col-lg-6">Talschlsszug</li>
                 <li class="col-xl-4 col-lg-6">Talschlsszug</li>
             </ul>
-            <h2 class="mt-5">Erlebnisse für Kinder</h2>
+            <h2 class="soft">Erlebnisse für Kinder</h2>
             <ul class="row">
                 <li class="col-xl-4 col-lg-6">Talschlsszug</li>
                 <li class="col-xl-4 col-lg-6">Talschlsszug</li>

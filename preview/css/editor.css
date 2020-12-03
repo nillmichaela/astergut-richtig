@@ -123,8 +123,8 @@
   padding: 0; }
 
 body, p, a {
-  font-family: myriad-pro-semiextended;
-  font-weight: 400;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.75;
   letter-spacing: 0em;
@@ -150,7 +150,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-family: Proxima Nova;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.27778;
   letter-spacing: 0.2em;
@@ -167,9 +167,13 @@ h3, .h3 {
     text-transform: none;
     display: inline-block; }
 
+.description-image h3 {
+  margin-top: 30px;
+  margin-bottom: 35px; }
+
 ul li {
   font-family: Proxima Nova;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.27778;
   letter-spacing: 0.2em;
@@ -177,7 +181,7 @@ ul li {
   text-transform: uppercase;
   list-style-image: url(../img/icons/check.svg);
   padding-left: 25px;
-  padding-top: 15px; }
+  padding-top: 25px; }
 
 .special-list {
   align-items: center;
@@ -227,7 +231,7 @@ ul li {
 
 .description {
   font-family: Proxima Nova;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.4375;
   letter-spacing: 0.2em;
@@ -242,7 +246,7 @@ ul li {
 
 footer strong {
   font-family: Proxima Nova;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.27778;
   letter-spacing: 0.2em;
@@ -262,8 +266,8 @@ footer li, footer ul {
   padding: 0; }
 
 footer, footer p, footer a {
-  font-family: myriad-pro-semiextended;
-  font-weight: 400;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.15;
   letter-spacing: 0.075em;
@@ -322,6 +326,13 @@ footer, footer p, footer a {
   left: auto;
   right: -50px; }
 
+.main-nav .is-active {
+  font-weight: 700;
+  padding-right: 10px; }
+
+.padding-list {
+  padding-right: 120px; }
+
 .editor-post-title .editor-post-title__input {
   text-transform: none; }
 
@@ -336,8 +347,8 @@ header > span, header h1, header .h1, header h2, header .h2, header h3, header .
 
 @media (min-width: 768px) {
     body, p, a {
-      font-family: myriad-pro-semiextended;
-      font-weight: 400;
+      font-family: myriad-pro, sans-serif;
+      font-weight: 300;
       font-size: 1.25rem;
       line-height: 1.4;
       letter-spacing: 0em; }
@@ -350,9 +361,17 @@ header > span, header h1, header .h1, header h2, header .h2, header h3, header .
     h2, .h2 {
       font-family: Playfair Display;
       font-weight: 400;
-      font-size: 3.75rem;
-      line-height: normal / 60;
+      font-size: 3.375rem;
+      line-height: normal / 54;
       letter-spacing: 0.12em; }
+    h2.soft, .h2.soft {
+      font-family: Playfair Display;
+      font-weight: 400;
+      font-size: 3.125rem;
+      line-height: normal / 50;
+      letter-spacing: 0.12em;
+      margin-top: 100px;
+      margin-bottom: 40px; }
     .special-list {
       padding-left: 0;
       padding-top: 0; }
@@ -362,7 +381,7 @@ header > span, header h1, header .h1, header h2, header .h2, header h3, header .
       min-width: 200px; }
     .description {
       font-family: Proxima Nova;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 1.375rem;
       line-height: 1.04545;
       letter-spacing: 0.2em; }
@@ -371,12 +390,13 @@ header > span, header h1, header .h1, header h2, header .h2, header h3, header .
       padding: 50px;
       margin-left: 50px;
       margin-right: 50px; }
-    .caption {
-      display: block; }
     .editor-post-title .editor-post-title__input {
       font-size: 2.5rem; } }
 
 @media (min-width: 992px) {
+    h3, .h3 {
+      margin-top: 15px;
+      margin-bottom: 25px; }
     .slogan {
       bottom: -70px; }
     .slogan--right {
@@ -385,6 +405,8 @@ header > span, header h1, header .h1, header h2, header .h2, header h3, header .
       font-size: 1.875rem; } }
 
 @media (min-width: 1200px) {
+    .btn.btn--link {
+      margin-top: 45px; }
     .slogan {
       bottom: -50px;
       left: -250px; }

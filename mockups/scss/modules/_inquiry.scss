@@ -10,7 +10,7 @@
     padding-right: 200px;
   }
   label {
-    @include fontStack('Proxima Nova', 600, 18, 35, 200);
+    @include fontStack('Proxima Nova', 500, 18, 35, 200);
     color: $color--mine-shaft;
     text-transform: uppercase;
     margin: 0;
@@ -43,6 +43,22 @@
 // INQUIRY FULLPAGE
 
 .inquiry-fullpage {
+  .has-datepicker {
+    position:relative;
+
+    &::after {
+      content: "";
+      background-image: url(../img/icons/date-v2.svg);
+      background-repeat: no-repeat;
+      height: 35px;
+      width: 35px;
+      position: absolute;
+      right: 20px;
+      bottom: 18px;
+    }
+  }
+
+
   .has-bg {
     background: $color--black-haze;
     padding: 50px;
@@ -53,17 +69,26 @@
       padding: 150px;
     }
   }
-  input, input::placeholder, select, textarea, textarea::placeholder {
+  input, input::placeholder, select, textarea, textarea::placeholder, option {
     color: $color--tundora;
     text-transform: none;
     background: $color--white;
     padding: 20px 30px;
-    font-family: Montserrat;
+    //font-family: Montserrat;
     letter-spacing: 0;
-    font-size: 1rem;
+    //font-size: 1rem;
     font-weight: 300;
     line-height: 27px;
     min-height: 80px;
+  }
+  select {
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
   }
   label {
     padding: 0;
@@ -72,6 +97,9 @@
   }
   input, select, textarea {
     border: 5px solid $color--black-haze;
+  }
+  form .form-group:not(.form-check).has-datepicker label {
+    left: 35px;
   }
   form .form-group:not(.form-check) label {
     display: block;
@@ -101,6 +129,10 @@
     }
   }
   h3 {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  form h3 {
     margin-top: 80px;
     margin-left: 5px;
     margin-bottom: 20px;

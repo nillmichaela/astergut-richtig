@@ -22,6 +22,7 @@
       padding-right: 300px;
       padding-bottom: 140px;
       padding-top: 140px;
+      height:100%;
     }
   }
   &__image1 {
@@ -79,8 +80,10 @@
     padding-top: 50px;
   }
   @include media-breakpoint-up(xl) {
-    width: auto;
+    width: 100%;
     left: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

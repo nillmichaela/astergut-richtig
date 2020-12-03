@@ -7616,8 +7616,8 @@ a.ui-button:active,
   padding: 0; }
 
 body, p, a {
-  font-family: myriad-pro-semiextended;
-  font-weight: 400;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.75;
   letter-spacing: 0em;
@@ -7643,7 +7643,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-family: Proxima Nova;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.27778;
   letter-spacing: 0.2em;
@@ -7660,9 +7660,13 @@ h3, .h3 {
     text-transform: none;
     display: inline-block; }
 
+.description-image h3 {
+  margin-top: 30px;
+  margin-bottom: 35px; }
+
 ul li {
   font-family: Proxima Nova;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.125rem;
   line-height: 1.27778;
   letter-spacing: 0.2em;
@@ -7670,7 +7674,7 @@ ul li {
   text-transform: uppercase;
   list-style-image: url(../img/icons/check.svg);
   padding-left: 25px;
-  padding-top: 15px; }
+  padding-top: 25px; }
 
 .special-list {
   align-items: center;
@@ -7720,7 +7724,7 @@ ul li {
 
 .description {
   font-family: Proxima Nova;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.4375;
   letter-spacing: 0.2em;
@@ -7735,7 +7739,7 @@ ul li {
 
 footer strong {
   font-family: Proxima Nova;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.27778;
   letter-spacing: 0.2em;
@@ -7755,8 +7759,8 @@ footer li, footer ul {
   padding: 0; }
 
 footer, footer p, footer a {
-  font-family: myriad-pro-semiextended;
-  font-weight: 400;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.15;
   letter-spacing: 0.075em;
@@ -7814,6 +7818,13 @@ footer, footer p, footer a {
   bottom: -136px;
   left: auto;
   right: -50px; }
+
+.main-nav .is-active {
+  font-weight: 700;
+  padding-right: 10px; }
+
+.padding-list {
+  padding-right: 120px; }
 
 .page-wrap {
   overflow-x: hidden; }
@@ -8013,7 +8024,7 @@ footer {
   z-index: 3; }
   .inquiry label {
     font-family: Proxima Nova;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.125rem;
     line-height: 1.94444;
     letter-spacing: 0.2em;
@@ -8037,21 +8048,40 @@ footer {
   .inquiry select {
     margin-left: 10px; }
 
+.inquiry-fullpage .has-datepicker {
+  position: relative; }
+  .inquiry-fullpage .has-datepicker::after {
+    content: "";
+    background-image: url(../img/icons/date-v2.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    bottom: 18px; }
+
 .inquiry-fullpage .has-bg {
   background: #ECEDED;
   padding: 50px; }
 
-.inquiry-fullpage input, .inquiry-fullpage input::placeholder, .inquiry-fullpage select, .inquiry-fullpage textarea, .inquiry-fullpage textarea::placeholder {
+.inquiry-fullpage input, .inquiry-fullpage input::placeholder, .inquiry-fullpage select, .inquiry-fullpage textarea, .inquiry-fullpage textarea::placeholder, .inquiry-fullpage option {
   color: #4C4042;
   text-transform: none;
   background: #fff;
   padding: 20px 30px;
-  font-family: Montserrat;
   letter-spacing: 0;
-  font-size: 1rem;
   font-weight: 300;
   line-height: 27px;
   min-height: 80px; }
+
+.inquiry-fullpage select {
+  border: none;
+  outline: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer; }
 
 .inquiry-fullpage label {
   padding: 0;
@@ -8059,6 +8089,9 @@ footer {
 
 .inquiry-fullpage input, .inquiry-fullpage select, .inquiry-fullpage textarea {
   border: 5px solid #ECEDED; }
+
+.inquiry-fullpage form .form-group:not(.form-check).has-datepicker label {
+  left: 35px; }
 
 .inquiry-fullpage form .form-group:not(.form-check) label {
   display: block;
@@ -8086,6 +8119,10 @@ footer {
     margin-bottom: 0; }
 
 .inquiry-fullpage h3 {
+  margin-top: 20px;
+  margin-bottom: 80px; }
+
+.inquiry-fullpage form h3 {
   margin-top: 80px;
   margin-left: 5px;
   margin-bottom: 20px; }
@@ -8132,6 +8169,7 @@ footer {
   .element:last-child {
     margin-bottom: 100px; }
   .element img {
+    width: 100%;
     object-fit: cover; }
 
 .element-small {
@@ -8207,7 +8245,6 @@ footer {
   height: 100%; }
 
 .two-media-text__image2 {
-  padding-left: 0px;
   padding-top: 50px; }
   .two-media-text__image2 img {
     object-fit: cover;
@@ -8269,11 +8306,14 @@ footer {
   right: 20px;
   bottom: -160px; }
 
-.two-media-text--async .flex-row-reverse h2, .two-media-text--async .flex-row-reverse h3, .two-media-text--async .flex-row-reverse a {
+.two-media-text--async .flex-row-reverse .two-media-text__text--nobg {
+  padding-left: 100px; }
+
+.two-media-text--async .flex-row-reverse h2, .two-media-text--async .flex-row-reverse h3, .two-media-text--async .flex-row-reverse a, .two-media-text--async .flex-row-reverse p {
   text-align: right; }
 
 .two-media-text--async .flex-row-reverse .two-media-text__image1 {
-  padding-left: 0px;
+  padding-left: 15px;
   padding-right: 100px; }
 
 .gallery img {
@@ -9515,8 +9555,8 @@ footer {
   .text-md-center {
     text-align: center !important; }
     body, p, a {
-      font-family: myriad-pro-semiextended;
-      font-weight: 400;
+      font-family: myriad-pro, sans-serif;
+      font-weight: 300;
       font-size: 1.25rem;
       line-height: 1.4;
       letter-spacing: 0em; }
@@ -9529,9 +9569,17 @@ footer {
     h2, .h2 {
       font-family: Playfair Display;
       font-weight: 400;
-      font-size: 3.75rem;
-      line-height: normal / 60;
+      font-size: 3.375rem;
+      line-height: normal / 54;
       letter-spacing: 0.12em; }
+    h2.soft, .h2.soft {
+      font-family: Playfair Display;
+      font-weight: 400;
+      font-size: 3.125rem;
+      line-height: normal / 50;
+      letter-spacing: 0.12em;
+      margin-top: 100px;
+      margin-bottom: 40px; }
     .special-list {
       padding-left: 0;
       padding-top: 0; }
@@ -9541,7 +9589,7 @@ footer {
       min-width: 200px; }
     .description {
       font-family: Proxima Nova;
-      font-weight: 700;
+      font-weight: 500;
       font-size: 1.375rem;
       line-height: 1.04545;
       letter-spacing: 0.2em; }
@@ -9550,8 +9598,6 @@ footer {
       padding: 50px;
       margin-left: 50px;
       margin-right: 50px; }
-    .caption {
-      display: block; }
     .container-inner {
       padding-left: 100px;
       padding-right: 100px; }
@@ -9608,11 +9654,11 @@ footer {
     padding-top: 50px; }
     .two-media-text__text--nobg {
       padding-right: 100px;
-      padding-left: 100px;
+      padding-left: 70px;
       padding-top: 0px; }
     .two-media-text--async .two-media-text__text--nobg {
       padding-right: 100px;
-      padding-left: 100px;
+      padding-left: 70px;
       padding-top: 150px; }
   .two-media-text--async .two-media-text__image1 {
     padding-left: 100px; }
@@ -9621,7 +9667,6 @@ footer {
   .two-media-text__image1 {
     padding-left: 100px; }
     .two-media-text__image2 {
-      padding-left: 0;
       padding-top: 0; }
     .media-link--item {
       padding-left: 100px;
@@ -10163,6 +10208,9 @@ footer {
     text-align: right !important; }
   .text-lg-center {
     text-align: center !important; }
+    h3, .h3 {
+      margin-top: 15px;
+      margin-bottom: 25px; }
     .slogan {
       bottom: -70px; }
     .slogan--right {
@@ -10712,6 +10760,8 @@ footer {
     text-align: right !important; }
   .text-xl-center {
     text-align: center !important; }
+    .btn.btn--link {
+      margin-top: 45px; }
     .slogan {
       bottom: -50px;
       left: -250px; }
@@ -10750,7 +10800,8 @@ footer {
       .media-text--async__text--bg {
         padding-right: 300px;
         padding-bottom: 140px;
-        padding-top: 140px; }
+        padding-top: 140px;
+        height: 100%; }
       .media-text--async__image1 {
         margin-left: -10.66667%;
         margin-bottom: -10.66667%; }
@@ -10764,8 +10815,10 @@ footer {
         left: -125px;
         right: auto; }
   .description-image {
-    width: auto;
-    left: auto; }
+    width: 100%;
+    left: auto;
+    left: 50%;
+    transform: translateX(-50%); }
     .has-description {
       margin-bottom: 600px; }
     .media-text__text--nobg {

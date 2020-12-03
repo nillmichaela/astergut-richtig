@@ -21,6 +21,9 @@
                             www.astergut.at
                         </div>
                     </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
                 <div class="media-text--async__image1 col-xl-2 col-md-6 d-flex align-items-end">
                     <img class="img-fluid" src="img/kontakt/1.jpg" alt="Zimmer">
@@ -28,7 +31,7 @@
                 <div class="media-text--async__image2 col-xl-5  col-md-6 d-flex flex-column pt-5 pb-5">
                     <img class="img-fluid" src="img/kontakt/2.jpg" alt="Zimmer">
                     <div class="position-absolute description-image">
-                        <h2 class="text-center">Haben wir Ihr Interesse geweckt?</h2>
+                        <h2 class="text-center">Haben wir Ihr <br>Interesse geweckt?</h2>
                         <h3 class="text-center">Jetzt anfragen und Traumurlaub buchen!</h3>
                         <div class="text-center pt-3">
                             <button class="btn btn--primary" name="inqiry_button" formaction="/unverbindliche-anfrage">Anfragen</button>

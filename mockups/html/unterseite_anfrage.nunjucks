@@ -6,14 +6,21 @@
     <div class="page-content">
         <div class="element container-inner inquiry-fullpage">
             <div class="container-inner has-bg text-center">
-                <h2>Anfrage-Formular</h2>
+                <h2>Anfrage<span class="d-inline-block d-lg-none">-</span>formular</h2>
                 <h3>WIR FREUEN UNS AUF IHRE ANFRAGE!</h3>
-                <p class="mb-5">Senden Sie uns gerne eine unverbindliche Buchungsanfrage.
-                    Wir sind bemüht, Ihnen so schnell wie mögliche ein Angebot zu senden.
-                    Alle Felder mit * sind Pflichtfelder.</p>
+                <div class="col-xl-6 mx-auto">
+                    <p class="mb-5">Senden Sie uns gerne eine unverbindliche Buchungsanfrage.
+                        Wir sind bemüht, Ihnen so schnell wie mögliche ein Angebot zu senden.
+                        Alle Felder mit * sind Pflichtfelder.</p>
+                </div>
                 <form action="/anfrage/#wpcf7-f79-p71-o1" method="post" class="wpcf7-form init text-left" novalidate="novalidate">
                     <h3>Kontaktdaten</h3>
                     <div class="row align-items-center">
+                        <div class="col-xl-12">
+                            <div class="form-group">
+                                <select name="anrede" class="wpcf7-form-control wpcf7-select w-100" aria-invalid="false"><option value="Anrede">Anrede</option><option value="Herr">Herr</option><option value="Frau">Frau</option><option value="Diverse">Diverse</option></select>
+                            </div>
+                        </div>
                         <div class="col-xl-6">
                             <div class="form-group">
                                 <input type="text" name="firstname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="firstname" aria-required="true" aria-invalid="false">
@@ -48,6 +55,21 @@
                             <div class="form-group has-datepicker">
                                 <input type="text" name="departure" value="" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date form-control" id="departure" aria-required="true" aria-invalid="false">
                                 <label for="departure">Abreise</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Reisedaten</h3>
+                    <div class="row align-items-center">
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="firstname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="firstname" aria-required="true" aria-invalid="false">
+                                <label for="firstname">Vorname</label>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <input type="text" name="lastname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="lastname" aria-required="true" aria-invalid="false">
+                                <label for="lastname">Nachname</label>
                             </div>
                         </div>
                     </div>
