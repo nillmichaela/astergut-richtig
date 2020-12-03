@@ -30,6 +30,7 @@
       padding-right: 240px;
       padding-bottom: 140px;
       padding-top: 140px;
+      padding-left: 150px;
     }
   }
   &__image {
@@ -209,6 +210,7 @@
     padding-left: 100px;
   }
   @include media-breakpoint-up(xl) {
+    padding-left: 150px;
   }
 }
 
@@ -256,8 +258,14 @@
     bottom: auto;
   }
 }
-
+.text {
+  .media-text--async__text--bg {
+    @include media-breakpoint-up(xl) {
+      padding-right: 350px;}
+  }
+}
 .two-media-text--async {
+
   .flex-row-reverse {
     .two-media-text__text--nobg {
       padding-left: 100px;

@@ -10803,9 +10803,10 @@ footer {
     .media-text--async {
       margin-bottom: 600px; }
       .media-text--async__text--bg {
-        padding-right: 300px;
+        padding-right: 250px;
         padding-bottom: 140px;
         padding-top: 140px;
+        padding-left: 150px;
         height: 100%; }
       .media-text--async__image1 {
         margin-left: -10.66667%;
@@ -10831,7 +10832,8 @@ footer {
     .media-text__text--bg {
       padding-right: 240px;
       padding-bottom: 140px;
-      padding-top: 140px; }
+      padding-top: 140px;
+      padding-left: 150px; }
   .media-text__image {
     padding-left: 15px;
     padding-top: 0; }
@@ -10846,12 +10848,16 @@ footer {
     .media-text--fullwidth__description {
       width: 75%;
       margin-left: 12.5%; }
+    .text-bg {
+      padding-left: 150px; }
     .text--badge, .text--badge--left {
       right: 20%; }
     .text--badge--left {
       left: -100px;
       bottom: -125px;
       top: auto; }
+  .text .media-text--async__text--bg {
+    padding-right: 350px; }
     .teaser {
       margin-left: 60px; } }
     @media (min-width: 1549px) {
