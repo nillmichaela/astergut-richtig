@@ -97,7 +97,7 @@
 
         <div id="calendar" class="element container-inner">
             <h2>Verfügbarkeit / Preise</h2>
-            <p>Dieses Element folgt.. </p>
+            <scriptsrc="https://mainframe.capcorn.net/ressourcen/newUI/js/jquery.js"></script><!—ALLE nachstehendenZeilen müssen eingebaut werden--><!—Passen Sie die Iframe URLbzw.SRCan den Betrieb an--><scriptsrc="https://mainframe.capcorn.net/ressourcen/newUI/js/capcorn.js"></script><linkhref="https://mainframe.capcorn.net/ressourcen/newUI/css/capcorn.css"rel="stylesheet"><iframeid='iframeCapCorn'src="https://test.capcorn.net/Start?MB=9100&FL=17&LG=0"frameborder="0"width="100%"scrolling="auto"></iframe>
         </div>
 
         <div class="element-small container-inner">
